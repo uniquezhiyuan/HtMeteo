@@ -328,14 +328,14 @@ end_year, end_month, end_day, end_hour = 2020, 3, 26, 18
 
 # -------------------------用户认证 示例代码-------------------------
 # 初始化HtMeteo超级信息体
-h = HtMeteo(username='htqx', password='C0rn!ce11!')  # 指定海天气象用户名和密码
+h = HtMeteo(username='abc', password='123456')  # 指定海天气象用户名和密码
 # h = HtMeteo()  # 不指定用户名和密码，无法拉取在线数据，只能分析本地数据
 # h.login_account()
 print(h.account_info)  # 查看账户信息
 print(h.username, h.password, h.api_key, h.account_type, h.subscribe_days)  # 分别查看用户名、密码、api_key、用户类型、订阅时间
 
 # -------------------------历史天气数据统计分析 示例代码-------------------------
-h = HtMeteo(username='htqx', password='C0rn!ce11!')  # 实例化超级信息体
+h = HtMeteo(username='abc', password='123456')  # 实例化超级信息体
 h.set_location('西安市')  # 设定地点，会自动检测目录数据状态，如果数据缺失会自动从云端拉取，默认只拉区历史数据，如果需要预报数据需开启预报模式
 
 # 1.获取单一时间历史气象数据，
